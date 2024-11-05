@@ -24,13 +24,13 @@ def generate_qrcode(url, color):
     qrcode = segno.make_qr(url)
     qrcode.to_pil(scale=10,
                   dark="white",
-                  light=color).save()
+                  light=color).save("qrcode_streamlit.png")
 
 # if something is input
 if url and button:
     with st.spinner("generating  QR code"):
         time.sleep(1)
     generate_qrcode(url, color)
-    st.image("images/qrcode_streamlit.png",
+    st.image("qrcode_streamlit.png",
              caption="My QR CODE")
 
