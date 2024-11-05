@@ -1,3 +1,5 @@
-# first-repo
+# First Repo
 
 Hello World :)
+
+Hey, I edited the header!
