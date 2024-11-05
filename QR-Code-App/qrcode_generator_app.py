@@ -24,7 +24,7 @@ def generate_qrcode(url, color):
     qrcode = segno.make_qr(url)
     qrcode.to_pil(scale=10,
                   dark="white",
-                  light=color).save("images/qrcode_streamlit.png")
+                  light=color).save()
 
 # if something is input
 if url and button:
